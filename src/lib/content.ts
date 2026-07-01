@@ -73,6 +73,8 @@ export interface BusinessContent {
   whyUs: { title: string; desc: string }[];
   accreditations: string[];
   navLinks: NavLink[];
+  sectionImage1: string;
+  sectionImage2: string;
 }
 
 export const BUSINESS = businessData as BusinessContent;
