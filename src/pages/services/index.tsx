@@ -1,87 +1,65 @@
-import {
-  Box,
-  Button,
-  Card,
-  CardContent,
-  Chip,
-  Container,
-  Grid,
-  Typography,
-} from '@mui/material';
+import { Box, Button, Card, CardContent, Chip, Container, Grid, Typography } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
+import PhoneIcon from '@mui/icons-material/Phone';
 import Head from 'next/head';
-
 import { NextPage } from 'next';
-
 import Image from 'next/image';
 import { SERVICES, BUSINESS } from '@src/lib/content';
+
+const BRAND = { dark: '#1B273A', mid: '#414D63', light: '#F4F4F4', bg: '#F8F8F8' };
 
 const ServicesPage: NextPage = () => (
   <>
     <Head>
-      <title>Medical Imaging Services | Goulburn Radiology</title>
-      <meta name="description" content="Goulburn Radiology offers X-Ray, CT, MRI, Ultrasound, DEXA, Mammography and more. Bulk billing available on eligible services. Serving Goulburn NSW." />
+      <title>Services | Goulburn Radiology</title>
+      <meta name="description" content="Goulburn Radiology offers X-Ray/OPG and Ultrasound (Obstetric, MSK, Vascular, General) — bulk billed with Medicare referral. CT Scanning and Mammography coming soon." />
     </Head>
 
-    {/* Hero */}
-    <Box sx={{ bgcolor: '#F7FAFD', borderBottom: '1px solid #E2EAF4', py: { xs: 6, md: 8 } }}>
+    <Box sx={{ bgcolor: BRAND.bg, borderBottom: '1px solid #EAEAEA', py: { xs: 6, md: 8 } }}>
       <Container maxWidth="lg">
-        <Chip label="What We Offer" sx={{ bgcolor: '#E8F0FB', color: '#0B4F82', fontWeight: 600, mb: 2, fontSize: '1.3rem' }} />
-        <Typography component="h1" sx={{ fontSize: { xs: '3.2rem', md: '4.2rem' }, fontWeight: 800, color: '#0B2747', mb: 2, letterSpacing: '-0.02em' }}>
+        <Chip label="What We Offer" sx={{ bgcolor: '#EAEAEA', color: BRAND.dark, fontWeight: 600, mb: 2, fontSize: '1.3rem' }} />
+        <Typography component="h1" sx={{ fontSize: { xs: '3.2rem', md: '4.2rem' }, fontWeight: 800, color: BRAND.dark, mb: 2 }}>
           Our Imaging Services
         </Typography>
-        <Typography sx={{ fontSize: '1.8rem', color: '#5A6E84', maxWidth: 680 }}>
-          We offer a full range of diagnostic imaging services with fellowship-trained radiologists and modern equipment. Bulk billing available with a valid Medicare referral.
+        <Typography sx={{ fontSize: '1.8rem', color: BRAND.mid, maxWidth: 680 }}>
+          High-quality diagnostic imaging with a strong focus on patient safety, comfort and reduced radiation exposure.
         </Typography>
       </Container>
     </Box>
 
-    {/* Service cards */}
     <Box sx={{ bgcolor: '#fff', py: { xs: 7, md: 10 } }}>
       <Container maxWidth="lg">
-        <Grid container spacing={3}>
-          {SERVICES.map(service => (
-            <Grid item xs={12} sm={6} md={4} key={service.slug}>
-              <Card
-                component="a"
-                href={`/services/${service.slug}`}
-                elevation={0}
-                sx={{
-                  height: '100%',
-                  border: '1px solid #E2EAF4',
-                  borderRadius: '14px',
-                  textDecoration: 'none',
-                  transition: 'all 0.25s',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  '&:hover': {
-                    borderColor: '#4A90D9',
-                    boxShadow: '0 8px 32px rgba(11,79,130,0.12)',
-                    transform: 'translateY(-3px)',
-                  },
-                }}
-              >
-                <CardContent sx={{ p: 4, flex: 1, display: 'flex', flexDirection: 'column' }}>
-                  <Box sx={{ height: 160, borderRadius: '8px', overflow: 'hidden', mb: 2, position: 'relative', bgcolor: '#E2EAF4' }}>
-                    <Image src={service.image} alt={service.title} layout="fill" objectFit="cover" />
-                  </Box>
-                  <Box sx={{ fontSize: '2.5rem', mb: 1 }}>{service.icon}</Box>
-                  <Typography sx={{ fontWeight: 700, fontSize: '2rem', color: '#0B2747', mb: 1.5 }}>
-                    {service.title}
-                  </Typography>
-                  <Typography sx={{ fontSize: '1.5rem', color: '#5A6E84', flex: 1, lineHeight: 1.65 }}>
-                    {service.shortDesc}
-                  </Typography>
-                  <Box sx={{ mt: 3, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    {service.bulkBilled ? (
-                      <Chip label="Bulk Billing" size="small" sx={{ bgcolor: '#E8F5E9', color: '#2E7D32', fontWeight: 600, fontSize: '1.2rem' }} />
-                    ) : (
-                      <Box />
-                    )}
-                    <Box sx={{ display: 'flex', alignItems: 'center', color: '#0B4F82', fontWeight: 600, fontSize: '1.4rem', gap: 0.5 }}>
-                      Details <ArrowForwardIcon sx={{ fontSize: '1.6rem' }} />
+        <Grid container spacing={4}>
+          {SERVICES.map((service: import('@src/lib/content').Service) => (
+            <Grid item xs={12} sm={6} key={service.slug}>
+              <Card elevation={0} sx={{ border: '1px solid #EAEAEA', borderRadius: '12px', overflow: 'hidden', height: '100%', display: 'flex', flexDirection: 'column' }}>
+                <Box sx={{ height: 220, position: 'relative', bgcolor: BRAND.light }}>
+                  <Image src={service.image} alt={service.title} layout="fill" objectFit="cover" />
+                  {service.comingSoon && (
+                    <Box sx={{ position: 'absolute', inset: 0, bgcolor: 'rgba(27,39,58,0.65)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                      <Box sx={{ bgcolor: '#fff', color: BRAND.dark, fontWeight: 800, fontSize: '1.6rem', px: 3, py: 1, borderRadius: '8px' }}>
+                        Coming Soon — Awaiting Power Upgrade
+                      </Box>
                     </Box>
+                  )}
+                </Box>
+                <CardContent sx={{ p: 4, flex: 1, display: 'flex', flexDirection: 'column' }}>
+                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5, mb: 2 }}>
+                    <Box sx={{ fontSize: '2.8rem' }}>{service.icon}</Box>
+                    <Typography sx={{ fontWeight: 800, fontSize: '2.2rem', color: BRAND.dark }}>{service.title}</Typography>
+                  </Box>
+                  <Typography sx={{ fontSize: '1.6rem', color: BRAND.mid, lineHeight: 1.7, flex: 1 }}>{service.shortDesc}</Typography>
+                  <Box sx={{ mt: 3, display: 'flex', alignItems: 'center', gap: 2, flexWrap: 'wrap' }}>
+                    {service.bulkBilled && !service.comingSoon && (
+                      <Chip label="Bulk Billed" size="small" sx={{ bgcolor: '#E8F5E9', color: '#2E7D32', fontWeight: 600, fontSize: '1.2rem' }} />
+                    )}
+                    {!service.comingSoon && (
+                      <Box component="a" href={`/services/${service.slug}`}
+                        sx={{ display: 'flex', alignItems: 'center', gap: 0.5, color: BRAND.dark, fontWeight: 700, fontSize: '1.5rem', textDecoration: 'none', '&:hover': { color: BRAND.mid } }}>
+                        Learn more <ArrowForwardIcon sx={{ fontSize: '1.6rem' }} />
+                      </Box>
+                    )}
                   </Box>
                 </CardContent>
               </Card>
@@ -91,38 +69,32 @@ const ServicesPage: NextPage = () => (
       </Container>
     </Box>
 
-    {/* Bulk billing note */}
-    <Box sx={{ bgcolor: '#EEF6FF', py: { xs: 6, md: 8 } }}>
+    <Box sx={{ bgcolor: BRAND.bg, py: { xs: 6, md: 8 } }}>
       <Container maxWidth="lg">
         <Grid container spacing={5} alignItems="center">
           <Grid item xs={12} md={8}>
-            <Typography component="h2" sx={{ fontSize: { xs: '2.4rem', md: '3rem' }, fontWeight: 800, color: '#0B2747', mb: 2 }}>
+            <Typography component="h2" sx={{ fontSize: { xs: '2.4rem', md: '3rem' }, fontWeight: 800, color: BRAND.dark, mb: 2 }}>
               Bulk Billing Information
             </Typography>
             {[
-              'Bulk billing is available for many services including X-Ray, Ultrasound, DEXA and Mammography.',
-              'A valid Medicare card and GP/specialist referral are required.',
-              'Some services may attract a gap payment — please enquire when booking.',
-              'Pensioner and Health Care Card holders may be eligible for reduced fees.',
+              'We accept all referrals where Medicare is applicable.',
+              'Bring your referral form and Medicare card to your appointment.',
+              'Our staff will confirm bulk billing eligibility when you book.',
+              'Please call us if you have any questions about fees or eligibility.',
             ].map(line => (
-              <Box key={line} sx={{ display: 'flex', gap: 1.5, mb: 1.5 }}>
-                <CheckCircleOutlineIcon sx={{ color: '#0B4F82', fontSize: '2rem', flexShrink: 0, mt: 0.2 }} />
+              <Box key={line} sx={{ display: 'flex', gap: 1.5, mb: 1.8 }}>
+                <CheckCircleOutlineIcon sx={{ color: BRAND.dark, fontSize: '2rem', flexShrink: 0, mt: 0.2 }} />
                 <Typography sx={{ fontSize: '1.6rem', color: '#3A4E62' }}>{line}</Typography>
               </Box>
             ))}
           </Grid>
           <Grid item xs={12} md={4} sx={{ textAlign: { md: 'right' } }}>
-            <Button
-              variant="contained"
-              size="large"
-              href={`tel:${BUSINESS.phone.replace(/\s/g, '')}`}
-              sx={{ bgcolor: '#0B4F82', fontSize: '1.6rem', px: 5, py: 2, borderRadius: '10px', mb: 2 }}
-            >
-              Call to Book
+            <Button variant="contained" size="large" href={`tel:${BUSINESS.phone.replace(/\s/g, '')}`}
+              startIcon={<PhoneIcon />}
+              sx={{ bgcolor: BRAND.dark, fontSize: '1.6rem', px: 5, py: 2, borderRadius: '8px', mb: 1.5 }}>
+              {BUSINESS.phone}
             </Button>
-            <Typography sx={{ fontSize: '1.4rem', color: '#5A6E84' }}>
-              {BUSINESS.phone}<br />Mon–Fri 8:00am–5:30pm
-            </Typography>
+            <Typography sx={{ fontSize: '1.4rem', color: BRAND.mid }}>Mon–Fri 8:30am–5:00pm</Typography>
           </Grid>
         </Grid>
       </Container>

@@ -1,7 +1,3 @@
-/**
- * Content loader — reads from /content/*.json
- * Edit the JSON files directly or use any Git-based CMS.
- */
 import businessData from '../../content/business.json';
 import servicesData from '../../content/services.json';
 import teamData from '../../content/team.json';
@@ -15,10 +11,12 @@ export interface Service {
   icon: string;
   image: string;
   description: string;
+  types?: string[];
   indications: string[];
   preparation: string;
   duration: string;
   bulkBilled: boolean;
+  comingSoon: boolean;
 }
 
 export interface TeamMember {
@@ -41,10 +39,10 @@ export interface NavLink {
 
 export interface BusinessContent {
   siteName: string;
+  type: string;
   title: string;
   description: string;
   url: string;
-  type: string;
   locale: string;
   phone: string;
   fax: string;
@@ -56,7 +54,7 @@ export interface BusinessContent {
   addressCountry: string;
   areaServed: string[];
   geo: { latitude: number; longitude: number };
-  foundedYear: number;
+  foundedYear: number | null;
   hours: { days: string; hours: string }[];
   hero: {
     tagline: string;
@@ -92,6 +90,3 @@ export const META = {
   image: `${BUSINESS.url}/og-image.jpg`,
   locale: BUSINESS.locale,
 };
-
-// Legacy alias for referrers page
-export const REFERRER_INFO = REFERRERS;

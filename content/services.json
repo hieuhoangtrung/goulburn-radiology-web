@@ -1,145 +1,74 @@
 [
   {
     "slug": "x-ray",
-    "title": "X-Ray",
-    "shortDesc": "Fast, accurate plain film radiography for bones and chest.",
+    "title": "X-Ray / OPG",
+    "shortDesc": "Straightforward imaging of internal structures, particularly bones. Bulk billed with Medicare referral.",
     "icon": "🦴",
     "image": "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80&auto=format&fit=crop",
-    "description": "X-ray (radiography) is one of the most commonly used diagnostic tools in medicine. Our digital X-ray equipment produces high-quality images with minimal radiation exposure, helping clinicians diagnose fractures, infections, lung conditions and more.",
+    "description": "An X-ray (or radiograph) is a straightforward medical imaging technique that uses X-rays to capture images of internal structures, particularly bones. The process involves passing radiation through the body and recording the resulting shadows created by these structures.\n\nAt Goulburn Radiology, we are committed to delivering high-quality diagnostic imaging with a strong focus on patient safety and comfort. By utilizing state-of-the-art equipment and advanced imaging techniques, we are able to significantly reduce radiation exposure while maintaining exceptional image quality.",
     "indications": [
       "Suspected fractures or bone injuries",
-      "Chest infections or pneumonia",
-      "Arthritis assessment",
-      "Foreign body detection",
-      "Pre-operative assessment"
+      "Chest assessment",
+      "Arthritis evaluation",
+      "Dental and jaw imaging (OPG)",
+      "Pre-operative assessment",
+      "Foreign body detection"
     ],
     "preparation": "No preparation is usually required. Please wear comfortable clothing and remove jewellery from the area being examined.",
     "duration": "10–20 minutes",
-    "bulkBilled": true
-  },
-  {
-    "slug": "ct-scan",
-    "title": "CT Scan",
-    "shortDesc": "High-resolution cross-sectional imaging for detailed diagnosis.",
-    "icon": "🧠",
-    "image": "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=800&q=80&auto=format&fit=crop",
-    "description": "Computed Tomography (CT) combines X-ray images taken from many angles with computer processing to create detailed cross-sectional images of bones, blood vessels and soft tissues. Our modern 64-slice CT scanner delivers fast, high-quality scans with reduced radiation dose.",
-    "indications": [
-      "Head and brain assessment",
-      "Abdominal and pelvic conditions",
-      "Chest and lung disorders",
-      "Vascular disease",
-      "Cancer staging",
-      "Trauma assessment"
-    ],
-    "preparation": "For abdominal CT you may need to fast for 4 hours and drink oral contrast. Some scans require IV contrast – please advise us of any allergies or kidney problems.",
-    "duration": "15–30 minutes",
-    "bulkBilled": false
-  },
-  {
-    "slug": "mri",
-    "title": "MRI",
-    "shortDesc": "Detailed soft-tissue imaging using magnetic resonance.",
-    "icon": "🔬",
-    "image": "https://images.unsplash.com/photo-1582560475093-ba66accbc424?w=800&q=80&auto=format&fit=crop",
-    "description": "Magnetic Resonance Imaging (MRI) uses a powerful magnetic field and radio waves – no ionising radiation – to produce detailed images of soft tissues, joints, the brain and spine. It is particularly valuable for neurological, musculoskeletal and oncological assessment.",
-    "indications": [
-      "Brain and spinal cord disorders",
-      "Joint injuries (knee, shoulder, hip)",
-      "Soft tissue tumours",
-      "Pelvic and abdominal organs",
-      "Cardiac assessment"
-    ],
-    "preparation": "Remove all metal objects. Inform staff if you have a pacemaker, cochlear implant or other implanted device. Fasting may be required for abdominal scans.",
-    "duration": "30–60 minutes",
-    "bulkBilled": false
+    "bulkBilled": true,
+    "comingSoon": false
   },
   {
     "slug": "ultrasound",
     "title": "Ultrasound",
-    "shortDesc": "Real-time imaging using sound waves – safe for all ages.",
+    "shortDesc": "High-frequency sound wave imaging — completely safe, no radiation. Includes Obstetric, MSK, Vascular and General.",
     "icon": "💓",
     "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80&auto=format&fit=crop",
-    "description": "Ultrasound uses high-frequency sound waves to create real-time images of internal organs, blood vessels and developing babies. It is completely safe, involves no radiation, and is suitable for patients of all ages including pregnant women.",
+    "description": "An ultrasound examination uses high-frequency sound waves to create detailed images of the inside of your body. The sound waves are reflected back and processed into images that can be displayed on a screen.\n\nUltrasound has many benefits: it is completely safe, as it involves no radiation, and it is a painless, non-invasive procedure. At Goulburn Radiology we offer a full range of ultrasound services.",
+    "types": [
+      "Obstetric 3D/4D",
+      "Musculoskeletal (MSK)",
+      "Vascular / Doppler",
+      "General Ultrasound"
+    ],
     "indications": [
-      "Obstetric (pregnancy) monitoring",
+      "Pregnancy monitoring (Obstetric 3D/4D)",
+      "Muscle, tendon and joint assessment (MSK)",
+      "Blood flow and vascular studies (Doppler)",
       "Abdominal organ assessment",
-      "Thyroid and neck",
-      "Musculoskeletal injuries",
-      "Vascular (Doppler) studies",
-      "Guided biopsies"
+      "Thyroid and neck imaging",
+      "Guided procedures"
     ],
-    "preparation": "Preparation varies by examination. Abdominal scans require 4–6 hours fasting; pelvic scans require a full bladder. We will advise you when booking.",
+    "preparation": "Preparation varies by examination type. Our staff will explain how to prepare at the time of your booking. Please call us on 02 4821 4666 if you have any questions.",
     "duration": "20–45 minutes",
-    "bulkBilled": true
+    "bulkBilled": true,
+    "comingSoon": false
   },
   {
-    "slug": "dexa-scan",
-    "title": "DEXA / Bone Density",
-    "shortDesc": "Gold-standard bone mineral density assessment.",
-    "icon": "🦷",
-    "image": "https://images.unsplash.com/photo-1588776814546-ec7e1e5e3430?w=800&q=80&auto=format&fit=crop",
-    "description": "Dual-Energy X-ray Absorptiometry (DEXA) is the gold-standard test for measuring bone mineral density. It helps diagnose osteoporosis and assess fracture risk, enabling early preventive treatment.",
-    "indications": [
-      "Osteoporosis screening and monitoring",
-      "Post-menopausal women",
-      "Men over 60",
-      "Long-term steroid use",
-      "Monitoring bone density treatment response"
-    ],
-    "preparation": "No special preparation required. Avoid calcium supplements 24 hours before the scan.",
-    "duration": "15–20 minutes",
-    "bulkBilled": true
+    "slug": "ct-scanning",
+    "title": "CT Scanning",
+    "shortDesc": "High-resolution cross-sectional imaging. Coming soon — currently awaiting power upgrade.",
+    "icon": "🧠",
+    "image": "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=800&q=80&auto=format&fit=crop",
+    "description": "CT Scanning (Computed Tomography) combines X-ray images taken from many angles to create detailed cross-sectional images of the body. This service is coming soon to Goulburn Radiology — we are currently awaiting a power upgrade to support this equipment.",
+    "indications": [],
+    "preparation": "Please contact us for the latest availability.",
+    "duration": "TBC",
+    "bulkBilled": false,
+    "comingSoon": true
   },
   {
-    "slug": "mammography",
-    "title": "Mammography",
-    "shortDesc": "Specialised breast imaging for screening and diagnosis.",
+    "slug": "mammogram",
+    "title": "Mammogram",
+    "shortDesc": "Specialised breast imaging for screening and diagnosis. Coming soon — currently awaiting power upgrade.",
     "icon": "🎗️",
     "image": "https://images.unsplash.com/photo-1631815589968-fdb09a223b4e?w=800&q=80&auto=format&fit=crop",
-    "description": "Mammography is a specialised X-ray of the breast used for both routine screening and diagnostic assessment of breast symptoms. Our digital mammography system provides high-resolution images to assist in the early detection of breast cancer.",
-    "indications": [
-      "Breast cancer screening (BreastScreen)",
-      "Assessment of breast lumps or pain",
-      "Nipple discharge investigation",
-      "Follow-up after breast surgery"
-    ],
-    "preparation": "Do not use deodorant, talcum powder or lotion on your underarms or breasts on the day of the exam. Wear a two-piece outfit for easy undressing.",
-    "duration": "20–30 minutes",
-    "bulkBilled": true
-  },
-  {
-    "slug": "fluoroscopy",
-    "title": "Fluoroscopy",
-    "shortDesc": "Real-time X-ray for dynamic assessment of body systems.",
-    "icon": "🩺",
-    "image": "https://images.unsplash.com/photo-1504813184591-01572f98c85f?w=800&q=80&auto=format&fit=crop",
-    "description": "Fluoroscopy is a type of real-time X-ray imaging that allows our radiologists to observe moving body structures. It is commonly used for gastrointestinal studies, joint injections and other guided procedures.",
-    "indications": [
-      "Barium swallow and meal studies",
-      "Joint and spinal injections",
-      "Hysterosalpingography (HSG)",
-      "Cystourethrography"
-    ],
-    "preparation": "Preparation is specific to the type of study. We will provide detailed instructions when you book your appointment.",
-    "duration": "30–60 minutes",
-    "bulkBilled": false
-  },
-  {
-    "slug": "interventional",
-    "title": "Interventional Radiology",
-    "shortDesc": "Minimally invasive image-guided procedures.",
-    "icon": "⚕️",
-    "image": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800&q=80&auto=format&fit=crop",
-    "description": "Interventional radiology uses imaging guidance to perform minimally invasive procedures that diagnose and treat a variety of conditions. These procedures typically involve smaller incisions, shorter recovery times and fewer complications than open surgery.",
-    "indications": [
-      "CT-guided biopsies",
-      "Drainage of fluid collections",
-      "Joint and soft tissue injections",
-      "Vascular access procedures"
-    ],
-    "preparation": "Preparation depends on the specific procedure. Our team will contact you prior to your appointment with tailored instructions.",
-    "duration": "Varies by procedure",
-    "bulkBilled": false
+    "description": "Mammography is a specialised X-ray of the breast used for both routine screening and diagnostic assessment of breast symptoms. This service is coming soon to Goulburn Radiology — we are currently awaiting a power upgrade to support this equipment.",
+    "indications": [],
+    "preparation": "Please contact us for the latest availability.",
+    "duration": "TBC",
+    "bulkBilled": false,
+    "comingSoon": true
   }
 ]
