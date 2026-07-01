@@ -10,6 +10,7 @@ export interface Service {
   shortDesc: string;
   icon: string;
   image: string;
+  heroImage: string;
   description: string;
   types?: string[];
   indications: string[];
@@ -56,6 +57,11 @@ export interface BusinessContent {
   geo: { latitude: number; longitude: number };
   foundedYear: number | null;
   hours: { days: string; hours: string }[];
+  logo: string;
+  patientInfoImage: string;
+  aboutImage: string;
+  aboutBgImage: string;
+  colors: { primary: string; dark: string; background: string };
   hero: {
     tagline: string;
     headline: string;

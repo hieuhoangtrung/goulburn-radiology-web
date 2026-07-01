@@ -13,42 +13,108 @@
   "addressRegion": "NSW",
   "postalCode": "2580",
   "addressCountry": "AU",
-  "areaServed": ["Goulburn", "Southern Tablelands", "NSW"],
-  "geo": { "latitude": -34.7538, "longitude": 149.7195 },
+  "areaServed": [
+    "Goulburn",
+    "Southern Tablelands",
+    "NSW"
+  ],
+  "geo": {
+    "latitude": -34.7538,
+    "longitude": 149.7195
+  },
   "foundedYear": null,
   "hours": [
-    { "days": "Monday – Friday", "hours": "8:30 am – 5:00 pm" },
-    { "days": "Saturday – Sunday", "hours": "Closed" }
+    {
+      "days": "Monday \u2013 Friday",
+      "hours": "8:30 am \u2013 5:00 pm"
+    },
+    {
+      "days": "Saturday \u2013 Sunday",
+      "hours": "Closed"
+    }
   ],
   "hero": {
     "tagline": "Family-owned, locally trusted",
-    "headline": "Affordable, Reliable Medical Imaging – Bulk Billed in Goulburn",
+    "headline": "Affordable, Reliable Medical Imaging \u2013 Bulk Billed in Goulburn",
     "subtext": "Goulburn Radiology offers high-quality, bulk billed medical imaging services. We accept all referrals where Medicare is applicable, ensuring affordable and reliable care for X-rays, ultrasounds, and more.",
-    "badges": ["Bulk Billed", "Medicare Accepted", "All Referrals Welcome", "Family-Owned"],
-    "backgroundImage": "https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=1600&q=80&auto=format&fit=crop"
+    "badges": [
+      "Bulk Billed",
+      "Medicare Accepted",
+      "All Referrals Welcome",
+      "Family-Owned"
+    ],
+    "backgroundImage": "https://images.ctfassets.net/uoh1hi3eagsz/gJArMceFvS7Jd3pjvVfdO/8df6c84468f43da5b001b1951132e3bc/goulburn_radiology.jpg"
   },
   "stats": [
-    { "value": "100%", "label": "Bulk Billed" },
-    { "value": "All", "label": "Medicare Referrals Accepted" },
-    { "value": "4", "label": "Imaging Services" },
-    { "value": "5★", "label": "Patient Care" }
+    {
+      "value": "100%",
+      "label": "Bulk Billed"
+    },
+    {
+      "value": "All",
+      "label": "Medicare Referrals Accepted"
+    },
+    {
+      "value": "4",
+      "label": "Imaging Services"
+    },
+    {
+      "value": "5\u2605",
+      "label": "Patient Care"
+    }
   ],
   "whyUs": [
-    { "title": "Family-owned practice", "desc": "Founded by two experienced sonographers passionate about quality patient care" },
-    { "title": "Bulk billed services", "desc": "We accept all referrals where Medicare is applicable — no out-of-pocket costs for eligible patients" },
-    { "title": "Advanced technology", "desc": "State-of-the-art equipment with significantly reduced radiation exposure" },
-    { "title": "Electronic images", "desc": "Secure, password-protected electronic copies of your imaging results" },
-    { "title": "Patient comfort", "desc": "Personalized care in a friendly and approachable environment" }
+    {
+      "title": "Family-owned practice",
+      "desc": "Founded by two experienced sonographers passionate about quality patient care"
+    },
+    {
+      "title": "Bulk billed services",
+      "desc": "We accept all referrals where Medicare is applicable \u2014 no out-of-pocket costs for eligible patients"
+    },
+    {
+      "title": "Advanced technology",
+      "desc": "State-of-the-art equipment with significantly reduced radiation exposure"
+    },
+    {
+      "title": "Electronic images",
+      "desc": "Secure, password-protected electronic copies of your imaging results"
+    },
+    {
+      "title": "Patient comfort",
+      "desc": "Personalized care in a friendly and approachable environment"
+    }
   ],
   "accreditations": [
-    "Medicare-registered provider — bulk billing for eligible services",
+    "Medicare-registered provider \u2014 bulk billing for eligible services",
     "Committed to high-quality diagnostic imaging and patient safety",
     "State-of-the-art equipment with reduced radiation exposure"
   ],
   "navLinks": [
-    { "label": "Patient Information", "href": "/patient-information" },
-    { "label": "Services", "href": "/services" },
-    { "label": "About Us", "href": "/about" },
-    { "label": "Privacy Policy", "href": "/privacy" }
-  ]
+    {
+      "label": "Patient Information",
+      "href": "/patient-information"
+    },
+    {
+      "label": "Services",
+      "href": "/services"
+    },
+    {
+      "label": "About Us",
+      "href": "/about"
+    },
+    {
+      "label": "Privacy Policy",
+      "href": "/privacy"
+    }
+  ],
+  "logo": "https://images.ctfassets.net/uoh1hi3eagsz/64DSglAHLcIF18WHiHpsVF/702301c720dc577c70e078de584d7f0c/goulburn_logo.png",
+  "patientInfoImage": "https://images.ctfassets.net/uoh1hi3eagsz/55W3agcarLzsYSwJq6VTZ3/b4f4b188b1c5b2376476fce7dd74f250/online-doctor-concept_23-2148521980.avif",
+  "aboutImage": "https://images.ctfassets.net/uoh1hi3eagsz/4s8qZjpP5qBvxgMwSlqPLr/715f688d3b1499a0fab4d05fa693da42/ultrasound-scan.webp",
+  "aboutBgImage": "https://images.ctfassets.net/uoh1hi3eagsz/gJArMceFvS7Jd3pjvVfdO/8df6c84468f43da5b001b1951132e3bc/goulburn_radiology.jpg",
+  "colors": {
+    "primary": "#414D63",
+    "dark": "#1B273A",
+    "background": "#F8F8F8"
+  }
 }

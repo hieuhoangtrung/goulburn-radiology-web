@@ -3,6 +3,7 @@ import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import PhoneIcon from '@mui/icons-material/Phone';
 import Head from 'next/head';
 import { NextPage } from 'next';
+import Image from 'next/image';
 import { BUSINESS } from '@src/lib/content';
 
 const BRAND = { dark: '#1B273A', mid: '#414D63', light: '#F4F4F4', bg: '#F8F8F8' };
@@ -46,22 +47,9 @@ const AboutPage: NextPage = () => (
             </Typography>
           </Grid>
           <Grid item xs={12} md={5}>
-            <Grid container spacing={2}>
-              {[
-                { value: '2', label: 'Experienced Sonographers' },
-                { value: '4', label: 'Imaging Services' },
-                { value: '100%', label: 'Bulk Billed' },
-                { value: '🔒', label: 'Secure Electronic Images' },
-              ].map(stat => (
-                <Grid item xs={6} key={stat.label}>
-                  <Box sx={{ p: 3.5, bgcolor: BRAND.light, border: '1px solid #EAEAEA', borderRadius: '10px', textAlign: 'center' }}>
-                    <Typography sx={{ fontSize: '3.2rem', fontWeight: 800, color: BRAND.dark, lineHeight: 1 }}>{stat.value}</Typography>
-                    <Typography sx={{ fontSize: '1.4rem', color: BRAND.mid, mt: 0.8 }}>{stat.label}</Typography>
-                  </Box>
-                </Grid>
-              ))}
-            </Grid>
-          </Grid>
+            <Box sx={{ position: 'relative', borderRadius: '14px', overflow: 'hidden', height: { xs: 280, md: 400 } }}>
+              <Image src={BUSINESS.aboutImage} alt="Ultrasound scan at Goulburn Radiology" layout="fill" objectFit="cover" />
+            </Box></Grid>
         </Grid>
       </Container>
     </Box>

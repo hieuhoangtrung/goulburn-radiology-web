@@ -8,7 +8,7 @@ const nextConfig = {
     ignoreBuildErrors: false,
   },
   images: {
-    domains: ['images.unsplash.com'],
+    domains: ['images.unsplash.com', 'images.ctfassets.net'],
   },
   env: {
     ENVIRONMENT_NAME: process.env.ENVIRONMENT_NAME,

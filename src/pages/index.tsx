@@ -21,7 +21,7 @@ const HomePage: NextPage = () => (
     {/* HERO */}
     <Box sx={{ bgcolor: BRAND.dark, color: '#fff', py: { xs: 8, md: 12 }, position: 'relative', overflow: 'hidden' }}>
       <Box sx={{ position: 'absolute', inset: 0, opacity: 0.08 }}>
-        <Image src="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=1600&q=80&auto=format&fit=crop"
+        <Image src={BUSINESS.hero.backgroundImage}
           alt="" layout="fill" objectFit="cover" />
       </Box>
       <Container maxWidth="lg" sx={{ position: 'relative' }}>

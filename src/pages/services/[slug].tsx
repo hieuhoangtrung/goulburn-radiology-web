@@ -49,7 +49,7 @@ const ServiceDetailPage: NextPage<Props> = ({ service, related }) => (
 
     {/* Hero image */}
     <Box sx={{ width: '100%', height: { xs: 220, md: 340 }, position: 'relative', bgcolor: BRAND.light }}>
-      <Image src={service.image} alt={service.title} layout="fill" objectFit="cover" />
+      <Image src={service.heroImage} alt={service.title} layout="fill" objectFit="cover" />
       {service.comingSoon && (
         <Box sx={{ position: 'absolute', inset: 0, bgcolor: 'rgba(27,39,58,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <Typography sx={{ color: '#fff', fontWeight: 800, fontSize: { xs: '2.4rem', md: '3.2rem' }, textAlign: 'center' }}>
