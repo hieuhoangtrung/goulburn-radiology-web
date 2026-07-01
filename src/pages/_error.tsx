@@ -24,7 +24,7 @@ const ErrorPage: NextPage<ErrorPageProps> = ({ statusCode }) => (
         </Typography>
         <Typography sx={{ fontSize: '1.8rem', color: '#5A6E84', mb: 5, maxWidth: 480, mx: 'auto' }}>
           {statusCode === 404
-            ? "Sorry, the page you're looking for doesn't exist."
+            ? "Sorry, the page you&apos;re looking for doesn't exist."
             : 'An unexpected error occurred. Please try again or contact us.'}
         </Typography>
         <Button
