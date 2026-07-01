@@ -7,7 +7,7 @@ const MAILGUN_DOMAIN = process.env.MAILGUN_DOMAIN || 'goulburnradiology.com.au';
 const MAILGUN_TO = process.env.MAILGUN_TO_EMAIL || 'admin@goulburnradiology.com.au';
 
 const mailgun = new Mailgun(FormData);
-const mg = mailgun.client({ username: 'api', key: MAILGUN_API_KEY });
+const mg = mailgun.client({ username: 'api', key: MAILGUN_API_KEY as string });
 
 // Simple in-memory rate limiting (5 submissions per 15 min per IP)
 const rateLimitMap = new Map<string, { count: number; ts: number }>();
