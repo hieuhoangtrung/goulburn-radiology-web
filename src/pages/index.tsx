@@ -14,7 +14,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import Head from 'next/head';
-import Link from 'next/link';
+
 import { NextPage } from 'next';
 
 import Image from 'next/image';
@@ -95,7 +95,6 @@ const HomePage: NextPage = () => {
                   {BUSINESS.phone}
                 </Button>
                 <Button
-                  component={Link}
                   href="/services"
                   variant="outlined"
                   size="large"
@@ -166,7 +165,7 @@ const HomePage: NextPage = () => {
             {SERVICES.map(service => (
               <Grid item xs={12} sm={6} md={3} key={service.slug}>
                 <Card
-                  component={Link}
+                  component="a"
                   href={`/services/${service.slug}`}
                   elevation={0}
                   sx={{
@@ -238,7 +237,6 @@ const HomePage: NextPage = () => {
                 </Box>
               ))}
               <Button
-                component={Link}
                 href="/about"
                 variant="contained"
                 size="large"
@@ -311,7 +309,7 @@ const HomePage: NextPage = () => {
             ))}
           </Grid>
           <Box sx={{ textAlign: 'center', mt: 5 }}>
-            <Button component={Link} href="/about" variant="outlined" size="large" sx={{ fontSize: '1.5rem', px: 5, py: 1.5, borderRadius: '10px', color: '#0B4F82', borderColor: '#0B4F82' }}>
+            <Button href="/about" variant="outlined" size="large" sx={{ fontSize: '1.5rem', px: 5, py: 1.5, borderRadius: '10px', color: '#0B4F82', borderColor: '#0B4F82' }}>
               Meet the Full Team
             </Button>
           </Box>
@@ -338,7 +336,6 @@ const HomePage: NextPage = () => {
               {BUSINESS.phone}
             </Button>
             <Button
-              component={Link}
               href="/contact"
               variant="outlined"
               size="large"

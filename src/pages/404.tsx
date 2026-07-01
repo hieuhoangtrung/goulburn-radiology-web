@@ -2,7 +2,7 @@ import { Box, Button, Container, Typography } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import PhoneIcon from '@mui/icons-material/Phone';
 import Head from 'next/head';
-import Link from 'next/link';
+
 import { NextPage } from 'next';
 
 import { BUSINESS } from '@src/lib/content';
@@ -30,7 +30,6 @@ const NotFoundPage: NextPage = () => (
         </Typography>
         <Box sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 2 }}>
           <Button
-            component={Link}
             href="/"
             variant="contained"
             startIcon={<ArrowBackIcon />}

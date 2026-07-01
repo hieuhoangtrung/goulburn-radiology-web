@@ -17,7 +17,7 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import PhoneIcon from '@mui/icons-material/Phone';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Head from 'next/head';
-import Link from 'next/link';
+
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 
 import Image from 'next/image';
@@ -39,9 +39,9 @@ const ServiceDetailPage: NextPage<Props> = ({ service, related }) => (
     <Box sx={{ bgcolor: '#F7FAFD', borderBottom: '1px solid #E2EAF4', py: { xs: 5, md: 7 } }}>
       <Container maxWidth="lg">
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 3, fontSize: '1.4rem', color: '#5A6E84' }}>
-          <Link href="/" style={{ color: '#5A6E84', textDecoration: 'none' }}>Home</Link>
+          <a href="/"  style={{ color: '#5A6E84', textDecoration: 'none' }}>Home</a>
           <Box>/</Box>
-          <Link href="/services" style={{ color: '#5A6E84', textDecoration: 'none' }}>Services</Link>
+          <a href="/services"  style={{ color: '#5A6E84', textDecoration: 'none' }}>Services</a>
           <Box>/</Box>
           <Box sx={{ color: '#0B4F82', fontWeight: 600 }}>{service.title}</Box>
         </Box>
@@ -152,7 +152,6 @@ const ServiceDetailPage: NextPage<Props> = ({ service, related }) => (
 
             {/* Back link */}
             <Button
-              component={Link}
               href="/services"
               startIcon={<ArrowBackIcon />}
               sx={{ color: '#0B4F82', fontSize: '1.4rem' }}
@@ -172,9 +171,7 @@ const ServiceDetailPage: NextPage<Props> = ({ service, related }) => (
             <Grid container spacing={3}>
               {related.map(s => (
                 <Grid item xs={12} sm={6} md={4} key={s.slug}>
-                  <Box
-                    component={Link}
-                    href={`/services/${s.slug}`}
+                  <Box component="a" href={`/services/${s.slug}`}
                     sx={{
                       display: 'flex',
                       alignItems: 'center',

@@ -11,7 +11,7 @@ import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import PhoneIcon from '@mui/icons-material/Phone';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Head from 'next/head';
-import Link from 'next/link';
+
 import { NextPage } from 'next';
 
 import Image from 'next/image';
@@ -173,7 +173,6 @@ const AboutPage: NextPage = () => (
                 {BUSINESS.phone}
               </Button>
               <Button
-                component={Link}
                 href="/contact"
                 fullWidth
                 variant="outlined"

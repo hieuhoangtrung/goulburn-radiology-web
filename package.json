@@ -1,12 +1,8 @@
 {
-  "name": "template-marketing-webapp-nextjs",
+  "name": "goulburn-radiology-web",
   "description": "",
   "private": true,
-  "version": "0.0.1",
-  "engines": {
-    "node": ">=22",
-    "npm": "Please use Yarn"
-  },
+  "version": "1.0.0",
   "scripts": {
     "start": "next start",
     "dev": "next dev",

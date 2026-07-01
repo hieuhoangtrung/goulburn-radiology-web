@@ -2,7 +2,7 @@ import { Box, Container, Typography, Button } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { NextPage, NextPageContext } from 'next';
 import Head from 'next/head';
-import Link from 'next/link';
+
 import React from 'react';
 
 interface ErrorPageProps {
@@ -28,7 +28,6 @@ const ErrorPage: NextPage<ErrorPageProps> = ({ statusCode }) => (
             : 'An unexpected error occurred. Please try again or contact us.'}
         </Typography>
         <Button
-          component={Link}
           href="/"
           variant="contained"
           startIcon={<ArrowBackIcon />}

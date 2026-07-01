@@ -11,7 +11,7 @@ import {
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import Head from 'next/head';
-import Link from 'next/link';
+
 import { NextPage } from 'next';
 
 import Image from 'next/image';
@@ -44,7 +44,7 @@ const ServicesPage: NextPage = () => (
           {SERVICES.map(service => (
             <Grid item xs={12} sm={6} md={4} key={service.slug}>
               <Card
-                component={Link}
+                component="a"
                 href={`/services/${service.slug}`}
                 elevation={0}
                 sx={{

@@ -13,7 +13,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import PhoneIcon from '@mui/icons-material/Phone';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Head from 'next/head';
-import Link from 'next/link';
+
 import { NextPage } from 'next';
 import { useState } from 'react';
 
@@ -97,7 +97,6 @@ const FAQPage: NextPage = () => {
                     {BUSINESS.phone}
                   </Button>
                   <Button
-                    component={Link}
                     href="/contact"
                     fullWidth
                     variant="outlined"
@@ -115,11 +114,11 @@ const FAQPage: NextPage = () => {
                     { label: 'For referrers', href: '/referrers' },
                     { label: 'Find us', href: '/contact' },
                   ].map(link => (
-                    <Link key={link.href} href={link.href} style={{ textDecoration: 'none' }}>
+                    <a href={link.href} key={link.href}  style={{ textDecoration: 'none' }}>
                       <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, py: 1.2, color: '#0B4F82', fontSize: '1.5rem', fontWeight: 600, borderBottom: '1px solid #E2EAF4', '&:hover': { color: '#1A6FAD' } }}>
                         <ArrowForwardIcon sx={{ fontSize: '1.6rem' }} /> {link.label}
                       </Box>
-                    </Link>
+                    </a>
                   ))}
                 </Box>
               </Box>
