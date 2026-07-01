@@ -1,0 +1,21 @@
+{
+  "intro": "Goulburn Radiology provides a comprehensive referral service for GPs, specialists and allied health professionals across the Southern Tablelands region. We are committed to timely, high-quality reporting and close communication with referrers.",
+  "features": [
+    { "title": "Online Referrals", "desc": "Submit referrals electronically via your practice management software or fax to (02) 4822 5600.", "icon": "📋" },
+    { "title": "Rapid Reporting", "desc": "Routine reports within 24–48 hours. Urgent reports available same day or immediately for emergencies.", "icon": "⚡" },
+    { "title": "Direct Communication", "desc": "Our radiologists are available to discuss cases directly. Contact us on (02) 4821 5733.", "icon": "📞" },
+    { "title": "Results Delivery", "desc": "Reports delivered via your preferred method: fax, secure messaging (Argus/Medical Objects), or patient collection.", "icon": "📨" },
+    { "title": "Prior Images", "desc": "We maintain a comprehensive archive of prior studies, enabling meaningful comparison reporting.", "icon": "🗂️" },
+    { "title": "Subspecialty Expertise", "desc": "Fellowship-trained subspecialists in neuroradiology, MSK, breast imaging, and interventional procedures.", "icon": "🎓" }
+  ],
+  "steps": [
+    { "step": "1", "title": "Write a referral", "desc": "Use your practice management system, our referral form, or a standard letter including the patient details and clinical indication." },
+    { "step": "2", "title": "Send or give to patient", "desc": "Submit electronically via Argus/Medical Objects, fax to (02) 4822 5600, or hand the referral to your patient to bring to us." },
+    { "step": "3", "title": "Patient books", "desc": "The patient calls us on (02) 4821 5733 or walks in. We will handle preparation instructions and scheduling." },
+    { "step": "4", "title": "Receive your report", "desc": "Reports are delivered to your nominated contact method within 24–48 hours. Urgent results are communicated immediately." }
+  ],
+  "downloadForms": [
+    { "label": "Referral Form (PDF)", "href": "/forms/referral-form.pdf" },
+    { "label": "Patient Consent Form", "href": "/forms/consent-form.pdf" }
+  ]
+}

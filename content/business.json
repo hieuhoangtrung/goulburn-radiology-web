@@ -1,0 +1,59 @@
+{
+  "siteName": "Goulburn Radiology",
+  "title": "Goulburn Radiology | Medical Imaging in Goulburn, NSW",
+  "description": "Goulburn Radiology provides expert medical imaging services including X-Ray, MRI, CT, Ultrasound, and more in Goulburn, NSW. Bulk billing available.",
+  "url": "https://www.goulburnradiology.com.au",
+  "locale": "en_AU",
+  "type": "MedicalClinic",
+  "phone": "(02) 4821 5733",
+  "fax": "(02) 4822 5600",
+  "email": "admin@goulburnradiology.com.au",
+  "addressStreet": "135 Sloane Street",
+  "addressLocality": "Goulburn",
+  "addressRegion": "NSW",
+  "postalCode": "2580",
+  "addressCountry": "AU",
+  "areaServed": ["Goulburn", "Southern Tablelands", "NSW"],
+  "geo": { "latitude": -34.7538, "longitude": 149.7195 },
+  "foundedYear": 1985,
+  "hours": [
+    { "days": "Monday – Friday", "hours": "8:00 am – 5:30 pm" },
+    { "days": "Saturday", "hours": "8:30 am – 12:30 pm" },
+    { "days": "Sunday & Public Holidays", "hours": "Closed" }
+  ],
+  "hero": {
+    "tagline": "Serving Goulburn since 1985",
+    "headline": "Expert Medical Imaging in Goulburn, NSW",
+    "subtext": "Fellowship-trained radiologists providing high-quality diagnostic imaging for the Southern Tablelands. Bulk billing available on eligible services.",
+    "badges": ["Bulk Billing Available", "Same-Day Reports", "No Long Waits", "Digital Results"],
+    "backgroundImage": "https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=1600&q=80&auto=format&fit=crop"
+  },
+  "stats": [
+    { "value": "35+", "label": "Years Serving Goulburn" },
+    { "value": "4", "label": "Subspecialist Radiologists" },
+    { "value": "8", "label": "Imaging Modalities" },
+    { "value": "24h", "label": "Routine Report Turnaround" }
+  ],
+  "whyUs": [
+    { "title": "Fellowship-trained subspecialists", "desc": "Expertise in neuro, MSK, breast and interventional radiology" },
+    { "title": "Latest technology", "desc": "Modern 64-slice CT, 3T MRI and digital mammography" },
+    { "title": "Rapid reporting", "desc": "Routine results within 24–48 hours; urgent same-day" },
+    { "title": "Bulk billing", "desc": "Available for eligible services with valid Medicare referral" },
+    { "title": "Patient comfort", "desc": "Friendly staff committed to making your experience stress-free" }
+  ],
+  "accreditations": [
+    "Accredited by the Royal Australian and New Zealand College of Radiologists (RANZCR)",
+    "Medicare-registered provider for bulk-billed services",
+    "Radiation safety compliant with ARPANSA standards",
+    "Quality management system aligned with ISO 9001",
+    "BreastScreen-affiliated for mammography screening"
+  ],
+  "navLinks": [
+    { "label": "Home", "href": "/" },
+    { "label": "Services", "href": "/services" },
+    { "label": "About Us", "href": "/about" },
+    { "label": "For Referrers", "href": "/referrers" },
+    { "label": "FAQ", "href": "/faq" },
+    { "label": "Contact", "href": "/contact" }
+  ]
+}

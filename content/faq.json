@@ -1,0 +1,34 @@
+[
+  {
+    "question": "Do I need a referral?",
+    "answer": "Most imaging studies require a referral from a GP or specialist. Medicare bulk billing is generally only available with a valid referral. Walk-in appointments may be available for some services at out-of-pocket cost."
+  },
+  {
+    "question": "Is bulk billing available?",
+    "answer": "Yes. Bulk billing is available for many services including X-Ray, Ultrasound, DEXA and Mammography when you have a valid Medicare card and referral. Please enquire when booking as conditions apply."
+  },
+  {
+    "question": "How long will I wait for my results?",
+    "answer": "Our radiologists aim to report routine examinations within 24–48 hours. Urgent and emergency reports are available immediately. Results are sent directly to your referring doctor."
+  },
+  {
+    "question": "What should I bring to my appointment?",
+    "answer": "Please bring your referral form, Medicare card, any relevant previous imaging (CDs or reports), and your health fund card if applicable. Arrive 10 minutes early to complete paperwork."
+  },
+  {
+    "question": "Is MRI safe if I have metal implants?",
+    "answer": "Some metal implants are compatible with MRI and some are not. Please inform us of all implants, devices or foreign bodies when booking. We will assess safety before your appointment."
+  },
+  {
+    "question": "Can I bring someone with me?",
+    "answer": "Yes. You are welcome to bring a support person. However, they may not be able to remain in the imaging room during the procedure due to radiation safety requirements."
+  },
+  {
+    "question": "What if I am claustrophobic?",
+    "answer": "Please let us know when booking. We can discuss strategies to help manage anxiety during MRI or CT. In some cases, sedation can be arranged through your referring doctor."
+  },
+  {
+    "question": "Do you provide after-hours services?",
+    "answer": "Our practice is open Monday to Friday 8:00 am – 5:30 pm and Saturday 8:30 am – 12:30 pm. Emergency imaging is available through Goulburn Base Hospital outside these hours."
+  }
+]
